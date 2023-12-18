@@ -1,19 +1,30 @@
-Getting Started 🚀
+## Getting Started 🚀
 
 To get started, follow the installation and usage instructions below.
 
-Clone the repository to your local machine:
-git clone https://github.com/ayushsoni1010/moviemania.git
+1. Clone the repository to your local machine:
 
-Navigate to the project directory:
-cd moviemania
+```bash
+git clone https://github.com/SachinVenugopalan99/movie-app-fancode.git
+```
 
-Install the required dependencies:
+2. Navigate to the project directory:
+
+```bash
+cd movie-app-fancode
+```
+
+3. Install the required dependencies:
+
+```bash
 npm install
+```
 
-Start the development server:
+4. Start the development server:
+
+```bash
 npm start
-Open your favorite web browser and visit http://localhost:3000 to explore the app.
-The page will automatically reload when you make changes.
+```
 
-
+5. Open your favorite web browser and visit http://localhost:3000 to explore the app.\
+   The page will automatically reload when you make changes.
