@@ -16,6 +16,10 @@ export const NavWrapper = styled.main`
         overflow-x: scroll;
         overflow-y: hidden;
         margin-top: 12px;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
+        scrollbar-width: none; /* For Firefox */
+        -ms-overflow-style: none; /* For IE and Edge */
     }
     .tabContainer::-webkit-scrollbar {
     display: none;
@@ -30,6 +34,12 @@ export const NavWrapper = styled.main`
         font-size: 0.8rem;
         border-radius: 4px;
         cursor: pointer;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
     }
     .activeTab{
         background: red;
