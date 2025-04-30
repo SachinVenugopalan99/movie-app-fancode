@@ -1,6 +1,7 @@
 import React, {FC} from 'react'
 import { Wrapper } from './MoviesWrapper.style'
 import Movie from '../Movie/Movie'
+import AnimatedComponent from '../AnimatedComponent'
 
 interface MoviesWrapperProps{
 data: any
@@ -15,10 +16,12 @@ const MoviesWrapper:FC<MoviesWrapperProps> = ({data, searchQuery}) => {
         <div>
       <div className='movies '>
         {data?.map((movie: any) => (
+          <AnimatedComponent>
             <Movie
               movie={movie}
               key={Math.floor(Math.random() * movie.id * Date.now())}
             />
+          </AnimatedComponent>
         ))}
             </div>
         </div>
@@ -38,11 +41,13 @@ const MoviesWrapper:FC<MoviesWrapperProps> = ({data, searchQuery}) => {
               <div className='movies '>
 
           {movie?.movies?.map((item: any) => (      
-    
+              <AnimatedComponent>
             <Movie
               movie={item}
               key={Math.floor(Math.random() * item.id * Date.now())}
             />
+                      </AnimatedComponent>
+
           ))}
             </div>
             </div>
