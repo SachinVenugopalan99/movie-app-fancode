@@ -8,6 +8,8 @@ type Props = {
 
 const SearchBar: React.FC<Props> = ({ setSearchQuery }) => {
   const [state, setState] = useState("");
+
+
   const handleChange = (e:any) => {
     setState(e.currentTarget.value);
   };

@@ -14,7 +14,7 @@ const Navbar:FC<NavBarProps> = ({tabs, setSearchQuery, activeTab, setActiveTab, 
   return (
     <NavWrapper>
         <SearchBar setSearchQuery={setSearchQuery}/>
-        {!searchQuery ? 
+        {/* {!searchQuery ? 
               <div className={`tabContainer`}>
        {tabs?.map((item: any) => (
         <div className={`tab ${activeTab === item?.name && 'activeTab'}`}
@@ -25,7 +25,7 @@ const Navbar:FC<NavBarProps> = ({tabs, setSearchQuery, activeTab, setActiveTab, 
             </div>
        ))}
       </div>
-        : null}
+        : null} */}
 
     </NavWrapper>
   )
